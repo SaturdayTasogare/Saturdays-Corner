@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #111827;
-    color: white;
+    background: #ffe4ec;
+    color: #8b0041;
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -10,6 +10,7 @@ body {
 }
 
 h1 {
+    color: #d63384;
     font-size: 3rem;
 }
 
