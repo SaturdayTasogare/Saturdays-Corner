@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Corner</title>
+
+    <script>
+    (() => {
+        const saved = localStorage.getItem('darkmode');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = saved === 'active' || (!saved && prefersDark);
+        document.documentElement.classList.toggle('darkmode', isDark);
+    })();
+    </script>
+
     <link rel="stylesheet" href="style.css">
 
-    <!--the favicon!-->
+    <!--the favicon followed by the theme script at the end-->
     <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96"/>
     <link rel="icon" type="image/svg+xml" href="icons/favicon.svg"/>
     <link rel="shortcut icon" href="icons/favicon.ico"/>
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"/>
     <meta name="apple-mobile-web-app-title" content="Saturday"/>
     <link rel="manifest" href="icons/site.webmanifest"/>
+    <script type="text/javascript" src="theme.js" defer></script>
 </head>
 <body>
     <h1>Welcome to Saturday's Corner!!!</h1>
-    <p>testing testing testing...</p>
+    <p>My goal with this site is to just post my random shit and see how it goes, so hope you enjoy!!!</p>
+
+    <!--theme toggle button-->
+    <button id="theme-toggle">
+        <img class="theme-icon" id="moon-icon" src="icons/moon-orbit.svg" alt="dark toggle" width="75" height="75">
+        <img class="theme-icon" id="sun-icon" src="icons/striped-sun.svg" alt="light toggle" width="75" height="75">
+    </button>
 </body>
 </html>

@@ -1,19 +1,62 @@
+:root {
+  --base-background: #ffe6f4;
+  --base-body: #8b0041;
+  --base-heading: #d63384;
+  --base-text: #ff0066;
+}
+
+.darkmode{
+  --base-background: #17002f;
+  --base-body: #5f5fff;
+  --base-heading: #7f0fff;
+  --base-text: #9f7fff;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #ffe4ec;
-    color: #8b0041;
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--base-background);
+  color: var(--base-body);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
 h1 {
-    color: #d63384;
-    font-size: 3rem;
+  color: var(--base-heading);
+  font-size: 3rem;
 }
 
 p {
-    color: #ff0066;
+  color: var(--base-text);
+}
+
+#theme-toggle {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 35px;
+  right: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+#moon-icon {
+  display: block;
+}
+#sun-icon {
+  display: none;
+}
+.darkmode #moon-icon {
+  display: none;
+}
+.darkmode #sun-icon {
+  display: block;
 }
