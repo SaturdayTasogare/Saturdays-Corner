@@ -10,4 +10,5 @@ Welcome to Saturday's Corner! You will either know me as Purpl or Saturday, I ge
 5. Add a Navbar to the left of the screen
 6. Finish the second log (topic TBD, likely fate kaizo robot 64 or Happil clones)
 
-## 📖 Log Directory
+## 📖 Log Directory (WIP, coming soon)
+[Log 1: Kaizo Robot 64](saturdaytasogare.github.io/Saturdays-Corner/robot.html)
